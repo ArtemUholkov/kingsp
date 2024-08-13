@@ -14,6 +14,10 @@
   left: 0;
   z-index: -99;
 }
+.bg_img {
+  height: 100%;
+  width: 100%;
+}
 .video-foreground,
 .video-background iframe {
   position: absolute;
@@ -468,4 +472,18 @@ h1 {
 }
 .medium_fill {
   background-color: #0079b9;
+}
+@media (max-width: 840px) {
+  .bg_img {
+    object-fit: cover;
+
+    object-position: -300px center;
+  }
+}
+@media (max-width: 610px) {
+  .bg_img {
+    object-fit: cover;
+    max-height: 600px;
+    object-position: -500px center;
+  }
 }
