@@ -1,0 +1,146 @@
+.usage {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.title_wrapper {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+  z-index: 11;
+}
+.decoration_stripe {
+  height: 2px;
+  width: 30%;
+  max-width: 50px;
+  background-color: #1b3647;
+  margin: 0px 10px 0px 10px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2 {
+  font-size: 34px;
+  color: #1b3647;
+  white-space: nowrap;
+  text-align: center;
+  align-self: center;
+}
+.usage_content_wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.usage_content_item {
+  height: 200px;
+  width: 200px;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 2px solid rgb(134, 132, 132);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #5198c5;
+  transition: all 0.15s;
+}
+
+.first_row,
+.second_row,
+.first_sub_row,
+.second_sub_row,
+.third_sub_row,
+.fourth_sub_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.icons {
+  font-size: 50px;
+  color: white;
+}
+.usage_content_item_text {
+  font-size: 16px;
+  color: white;
+}
+.usage_content_item:hover {
+  background-color: #1b3647;
+  transition: all 0.15s;
+}
+.usage_content_item:hover .icons {
+  font-size: 52px;
+  transition: all 0.15s;
+}
+#slow {
+  animation: blink 1500ms linear infinite;
+  -moz-animation: blink 1500ms linear infinite;
+  -webkit-animation: blink 1500ms linear infinite;
+}
+#medium {
+  animation: blink 3500ms linear infinite;
+  -moz-animation: blink 3500ms linear infinite;
+  -webkit-animation: blink 3500ms linear infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.75;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.75;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.75;
+  }
+}
+@media (max-width: 448px) {
+  .usage_content_item {
+    height: 150px;
+    width: 150px;
+  }
+  .icons {
+    font-size: 35px;
+    color: white;
+  }
+  .usage_content_item_text {
+    font-size: 12px;
+    color: white;
+  }
+}
